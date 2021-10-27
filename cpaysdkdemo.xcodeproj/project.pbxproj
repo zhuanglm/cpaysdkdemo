@@ -14,6 +14,9 @@
 		C0E19667271F2182008BC85C /* cpaysdkdemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E19666271F2182008BC85C /* cpaysdkdemoTests.swift */; };
 		C0E19671271F2182008BC85C /* cpaysdkdemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E19670271F2182008BC85C /* cpaysdkdemoUITests.swift */; };
 		C0E19673271F2182008BC85C /* cpaysdkdemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E19672271F2182008BC85C /* cpaysdkdemoUITestsLaunchTests.swift */; };
+		C0E196812721FC48008BC85C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C0E196832721FC48008BC85C /* Localizable.strings */; };
+		C0E196862722360E008BC85C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E196852722360D008BC85C /* ViewModel.swift */; };
+		FB053938C206DC89F863E8F7 /* Pods_cpaysdkdemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B265C0368D5E715418CFB5 /* Pods_cpaysdkdemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09634F6A96DE3CC2F259E54D /* Pods-cpaysdkdemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cpaysdkdemo.debug.xcconfig"; path = "Target Support Files/Pods-cpaysdkdemo/Pods-cpaysdkdemo.debug.xcconfig"; sourceTree = "<group>"; };
+		411803B2DBDB688C620BA50F /* Pods-cpaysdkdemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cpaysdkdemo.release.xcconfig"; path = "Target Support Files/Pods-cpaysdkdemo/Pods-cpaysdkdemo.release.xcconfig"; sourceTree = "<group>"; };
 		C0E19652271F217E008BC85C /* cpaysdkdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cpaysdkdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E19655271F217E008BC85C /* cpaysdkdemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cpaysdkdemoApp.swift; sourceTree = "<group>"; };
 		C0E19657271F217E008BC85C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +49,11 @@
 		C0E1966C271F2182008BC85C /* cpaysdkdemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cpaysdkdemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E19670271F2182008BC85C /* cpaysdkdemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cpaysdkdemoUITests.swift; sourceTree = "<group>"; };
 		C0E19672271F2182008BC85C /* cpaysdkdemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cpaysdkdemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C0E196822721FC48008BC85C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C0E196842721FC58008BC85C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		C0E196852722360D008BC85C /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		C0ECF8FC2729AEE100FDE765 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E0B265C0368D5E715418CFB5 /* Pods_cpaysdkdemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cpaysdkdemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB053938C206DC89F863E8F7 /* Pods_cpaysdkdemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +82,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02AF68D6D447C47CFB0A9B0B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09634F6A96DE3CC2F259E54D /* Pods-cpaysdkdemo.debug.xcconfig */,
+				411803B2DBDB688C620BA50F /* Pods-cpaysdkdemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8FA3B5BEE52D52F79E49CA8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0B265C0368D5E715418CFB5 /* Pods_cpaysdkdemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C0E19649271F217E008BC85C = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +106,8 @@
 				C0E19665271F2182008BC85C /* cpaysdkdemoTests */,
 				C0E1966F271F2182008BC85C /* cpaysdkdemoUITests */,
 				C0E19653271F217E008BC85C /* Products */,
+				02AF68D6D447C47CFB0A9B0B /* Pods */,
+				8FA3B5BEE52D52F79E49CA8B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,10 +124,13 @@
 		C0E19654271F217E008BC85C /* cpaysdkdemo */ = {
 			isa = PBXGroup;
 			children = (
+				C0ECF8FC2729AEE100FDE765 /* Info.plist */,
 				C0E19655271F217E008BC85C /* cpaysdkdemoApp.swift */,
 				C0E19657271F217E008BC85C /* ContentView.swift */,
 				C0E19659271F2182008BC85C /* Assets.xcassets */,
 				C0E1965B271F2182008BC85C /* Preview Content */,
+				C0E196832721FC48008BC85C /* Localizable.strings */,
+				C0E196852722360D008BC85C /* ViewModel.swift */,
 			);
 			path = cpaysdkdemo;
 			sourceTree = "<group>";
@@ -134,9 +167,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0E19676271F2182008BC85C /* Build configuration list for PBXNativeTarget "cpaysdkdemo" */;
 			buildPhases = (
+				E43C25D2E769A5D94B3ADC7A /* [CP] Check Pods Manifest.lock */,
 				C0E1964E271F217E008BC85C /* Sources */,
 				C0E1964F271F217E008BC85C /* Frameworks */,
 				C0E19650271F217E008BC85C /* Resources */,
+				53F2FE2E61412EFD154A0D9B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -212,6 +247,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hans",
 				Base,
 			);
 			mainGroup = C0E19649271F217E008BC85C;
@@ -232,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0E1965D271F2182008BC85C /* Preview Assets.xcassets in Resources */,
+				C0E196812721FC48008BC85C /* Localizable.strings in Resources */,
 				C0E1965A271F2182008BC85C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,12 +289,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		53F2FE2E61412EFD154A0D9B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cpaysdkdemo/Pods-cpaysdkdemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cpaysdkdemo/Pods-cpaysdkdemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-cpaysdkdemo/Pods-cpaysdkdemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E43C25D2E769A5D94B3ADC7A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cpaysdkdemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C0E1964E271F217E008BC85C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C0E19658271F217E008BC85C /* ContentView.swift in Sources */,
+				C0E196862722360E008BC85C /* ViewModel.swift in Sources */,
 				C0E19656271F217E008BC85C /* cpaysdkdemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +373,18 @@
 			targetProxy = C0E1966D271F2182008BC85C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C0E196832721FC48008BC85C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0E196822721FC48008BC85C /* en */,
+				C0E196842721FC58008BC85C /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C0E19674271F2182008BC85C /* Debug */ = {
@@ -346,7 +438,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -401,7 +493,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -413,6 +505,7 @@
 		};
 		C0E19677271F2182008BC85C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09634F6A96DE3CC2F259E54D /* Pods-cpaysdkdemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -422,6 +515,7 @@
 				DEVELOPMENT_TEAM = K2S7RKVU3S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = cpaysdkdemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -443,6 +537,7 @@
 		};
 		C0E19678271F2182008BC85C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 411803B2DBDB688C620BA50F /* Pods-cpaysdkdemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +547,7 @@
 				DEVELOPMENT_TEAM = K2S7RKVU3S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = cpaysdkdemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

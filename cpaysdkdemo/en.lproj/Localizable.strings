@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  cpaysdkdemo
+
+  Created by Raymond Zhuang on 2021-10-21.
+  
+*/
+
+"new_payment" = "Apply a new payment";
+"loading" = "loading...";
+"regenerate" = "Regenerate";
+"amount" = "Amount";
+"duplicate" = "Duplicate";
+"currency" = "Currency";
+"vendor" = "Vendors";
+"upop" = "UnionPay";
+"result" = "Result";

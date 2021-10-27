@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  cpaysdkdemo
+
+  Created by Raymond Zhuang on 2021-10-21.
+  
+*/
+
+"new_payment" = "请求支付订单";
+"loading" = "正在获取...";
+"regenerate" = "重新生成";
+"amount" = "金额";
+"duplicate" = "是否重复";
+"currency" = "币种";
+"vendor" = "支付网关";
+"upop" = "银联";
+"result" = "交易结果";
