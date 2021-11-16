@@ -1,16 +1,16 @@
 PODS:
-  - CPay (1.3)
+  - CPay (2.4.1-alpha)
 
 DEPENDENCIES:
-  - CPay
+  - CPay (= 2.4.1-alpha)
 
 SPEC REPOS:
   trunk:
     - CPay
 
 SPEC CHECKSUMS:
-  CPay: d06c861331fcbb1d2a2b0af787bc9d242778bbb1
+  CPay: 578ae4d23efb9a4aa902593f0a873ed1aef1a2d5
 
-PODFILE CHECKSUM: ea17a6e5599a6f0795c5a7baddd58b1693794b76
+PODFILE CHECKSUM: eb4b9a24edcbca7328c637b7a0e1bd7eb628c3c0
 
 COCOAPODS: 1.11.2

@@ -7,6 +7,7 @@ target 'cpaysdkdemo' do
 
   # Pods for cpaysdkdemo
   #pod 'CPay', :path => '../'
-  pod 'CPay'
+   pod 'CPay', '2.4.1-alpha'
+  # pod 'CPay', '2.3.0'
 
 end

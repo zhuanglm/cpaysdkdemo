@@ -13,6 +13,8 @@ struct ContentView: View {
     @State var referenceID: String = ""
     @State var orderSubject: String = "test subject"
     @State var orderBody: String = "test data"
+    @State var extKey: String = "reference2"
+    @State var extValue: String = "112233445566"
     @State var amount: Int = 1
     @State var currencyIndex: Int = 0
     @State var vendorIndex: Int = 0
@@ -139,11 +141,27 @@ struct ContentView: View {
                         }.menuStyle(BorderlessButtonMenuStyle())
                     }
                     
+                    HStack {
+                        VStack {
+                            Text("Ext - key").padding(.horizontal, 30.0)
+                            TextField("key", text: $extKey).padding(.leading)
+                                .textFieldStyle(RoundedBorderTextFieldStyle())
+                                .frame(width: 150)
+                        }
+                        
+                        VStack {
+                            Text("Ext - value").padding(.horizontal, 60.0)
+                            TextField("value", text: $extValue).padding(.leading)
+                                .textFieldStyle(RoundedBorderTextFieldStyle())
+                                .frame(width: 150)
+                        }
+                    }
+                    
                 }
                 
                 Group {
                     Button(action: {
-                        viewModel.requestOrder(token: tokens[tokenIndex], mode: envIndex, reference: referenceID, amount: amount, subject: orderSubject, body: orderBody, currency: currencies[currencyIndex], vendor: vendors[vendorIndex], allowDuplicate: allowDuplicate)
+                        viewModel.requestOrder(token: tokens[tokenIndex], mode: envIndex, reference: referenceID, amount: amount, subject: orderSubject, body: orderBody, currency: currencies[currencyIndex], vendor: vendors[vendorIndex], allowDuplicate: allowDuplicate, extra: [extKey: extValue])
                         
                     }) {
                         Text("new_payment")

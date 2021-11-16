@@ -19,6 +19,21 @@ extension UIWindow {
     }
 }
 
+extension Dictionary {
+    
+    func toJsonString() -> String? {
+        guard let data = try? JSONSerialization.data(withJSONObject: self,
+                                                     options: []) else {
+            return nil
+        }
+        guard let str = String(data: data, encoding: .utf8) else {
+            return nil
+        }
+        return str
+     }
+    
+}
+
 class ViewModel: ObservableObject {
     private var mOrder: CPayOrder = CPayOrder()
     @Published var mOrderResult: String = ""
@@ -44,7 +59,7 @@ class ViewModel: ObservableObject {
         CPayManager.setupMode(CPayMode.init(rawValue: mode) ?? CPayMode.UAT)
     }
     
-    func requestOrder(token: String, mode: Int, reference: String, amount: Int, subject: String, body: String, currency: String, vendor: String, allowDuplicate: Bool) {
+    func requestOrder(token: String, mode: Int, reference: String, amount: Int, subject: String, body: String, currency: String, vendor: String, allowDuplicate: Bool, extra: Dictionary<String, String>) {
         self.setupSDK(token: token, mode: mode)
         mOrder.amount = String(amount)
         mOrder.referenceId = reference
@@ -55,6 +70,7 @@ class ViewModel: ObservableObject {
         mOrder.allowDuplicate = allowDuplicate
         mOrder.ipnUrl = "ipn.php"
         mOrder.callbackUrl = "citcon.com"
+        mOrder.extra = extra.toJsonString()
         if let keyWindow = UIWindow.key {
             mOrder.controller = keyWindow.rootViewController!
         }                    // required for upop payment
